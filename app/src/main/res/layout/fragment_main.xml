@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fonfo_main">
+
+    <ImageView
+        android:id="@+id/title_log"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/logo_star_wars"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_log">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp">
+
+            <ImageView
+                android:id="@+id/person_button"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/people"
+                app:tint="@color/yellow"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/person"
+                android:textColor="@color/yellow"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="@+id/person_button"
+                app:layout_constraintStart_toStartOf="@+id/person_button"
+                app:layout_constraintTop_toBottomOf="@+id/person_button" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp">
+
+            <ImageView
+                android:id="@+id/planet_button"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/planet"
+                app:tint="@color/yellow"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/planet"
+                android:textColor="@color/yellow"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="@+id/planet_button"
+                app:layout_constraintStart_toStartOf="@+id/planet_button"
+                app:layout_constraintTop_toBottomOf="@+id/planet_button" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp">
+
+            <ImageView
+                android:id="@+id/vehicles_button"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/vehicle"
+                app:tint="@color/yellow"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/vehicles"
+                android:textColor="@color/yellow"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="@+id/vehicles_button"
+                app:layout_constraintStart_toStartOf="@+id/vehicles_button"
+                app:layout_constraintTop_toBottomOf="@+id/vehicles_button" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="75dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_log">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp">
+
+            <ImageView
+                android:id="@+id/films_button"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/lightsaber"
+                app:tint="@color/yellow"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/films"
+                android:textColor="@color/yellow"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="@+id/films_button"
+                app:layout_constraintStart_toStartOf="@+id/films_button"
+                app:layout_constraintTop_toBottomOf="@+id/films_button" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp">
+
+            <ImageView
+                android:id="@+id/species_button"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/species"
+                app:tint="@color/yellow"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/species"
+                android:textColor="@color/yellow"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="@+id/species_button"
+                app:layout_constraintStart_toStartOf="@+id/species_button"
+                app:layout_constraintTop_toBottomOf="@+id/species_button" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp">
+
+            <ImageView
+                android:id="@+id/startships_button"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/starships"
+                app:tint="@color/yellow"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/starships"
+                android:textColor="@color/yellow"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="@+id/startships_button"
+                app:layout_constraintStart_toStartOf="@+id/startships_button"
+                app:layout_constraintTop_toBottomOf="@+id/startships_button" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

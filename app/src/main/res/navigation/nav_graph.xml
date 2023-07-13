@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.starwarscatalog.MainFragment"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_personFragment"
+            app:destination="@id/personFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_planetFragment"
+            app:destination="@id/planetFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_filmFragment"
+            app:destination="@id/filmFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_vehiclesFragment"
+            app:destination="@id/vehiclesFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_speciesFragment"
+            app:destination="@id/speciesFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_starshipFragment"
+            app:destination="@id/starshipFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/personFragment"
+        android:name="com.example.starwarscatalog.catalogFragments.PersonFragment"
+        tools:layout="@layout/fragment_person" >
+        <action
+            android:id="@+id/action_personFragment_to_personDetailFragment"
+            app:destination="@id/personDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/personDetailFragment"
+        android:name="com.example.starwarscatalog.catalogFragments.PersonDetailFragment"
+        tools:layout="@layout/fragment_person_detail" >
+        <action
+            android:id="@+id/action_personDetailFragment_to_planetDetailFragment"
+            app:destination="@id/planetDetailFragment" />
+        <action
+            android:id="@+id/action_personDetailFragment_to_filmDetailFragment"
+            app:destination="@id/filmDetailFragment" />
+        <action
+            android:id="@+id/action_personDetailFragment_to_vehiclesFragmentDetail"
+            app:destination="@id/vehiclesFragmentDetail" />
+        <action
+            android:id="@+id/action_personDetailFragment_to_specieDetailFragment"
+            app:destination="@id/specieDetailFragment" />
+        <action
+            android:id="@+id/action_personDetailFragment_to_starshipDetailFragment"
+            app:destination="@id/starshipDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/planetFragment"
+        android:name="com.example.starwarscatalog.catalogFragments.PlanetFragment"
+        tools:layout="@layout/fragment_planet" >
+        <action
+            android:id="@+id/action_planetFragment_to_planetDetailFragment"
+            app:destination="@id/planetDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/planetDetailFragment"
+        android:name="com.example.starwarscatalog.catalogFragments.PlanetDetailFragment"
+        tools:layout="@layout/fragment_planet_detail" >
+        <action
+            android:id="@+id/action_planetDetailFragment_to_personDetailFragment"
+            app:destination="@id/personDetailFragment" />
+        <action
+            android:id="@+id/action_planetDetailFragment_to_filmDetailFragment"
+            app:destination="@id/filmDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/filmFragment"
+        android:name="com.example.starwarscatalog.catalogFragments.FilmFragment"
+        tools:layout="@layout/fragment_film" >
+        <action
+            android:id="@+id/action_filmFragment_to_filmDetailFragment"
+            app:destination="@id/filmDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/filmDetailFragment"
+        android:name="com.example.starwarscatalog.catalogFragments.FilmDetailFragment"
+        tools:layout="@layout/fragment_film_detail" >
+        <action
+            android:id="@+id/action_filmDetailFragment_to_personDetailFragment"
+            app:destination="@id/personDetailFragment" />
+        <action
+            android:id="@+id/action_filmDetailFragment_to_planetDetailFragment"
+            app:destination="@id/planetDetailFragment" />
+        <action
+            android:id="@+id/action_filmDetailFragment_to_vehiclesFragmentDetail"
+            app:destination="@id/vehiclesFragmentDetail" />
+        <action
+            android:id="@+id/action_filmDetailFragment_to_specieDetailFragment"
+            app:destination="@id/specieDetailFragment" />
+        <action
+            android:id="@+id/action_filmDetailFragment_to_starshipDetailFragment"
+            app:destination="@id/starshipDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/vehiclesFragment"
+        android:name="com.example.starwarscatalog.catalogFragments.VehiclesFragment"
+        tools:layout="@layout/fragment_vehicles" >
+        <action
+            android:id="@+id/action_vehiclesFragment_to_vehiclesFragmentDetail"
+            app:destination="@id/vehiclesFragmentDetail" />
+    </fragment>
+    <fragment
+        android:id="@+id/vehiclesFragmentDetail"
+        android:name="com.example.starwarscatalog.catalogFragments.VehicleDetailFragment"
+        tools:layout="@layout/fragment_vehicles_detail" >
+        <action
+            android:id="@+id/action_vehiclesFragmentDetail_to_personDetailFragment"
+            app:destination="@id/personDetailFragment" />
+        <action
+            android:id="@+id/action_vehiclesFragmentDetail_to_filmDetailFragment"
+            app:destination="@id/filmDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/speciesFragment"
+        android:name="com.example.starwarscatalog.catalogFragments.SpeciesFragment"
+        tools:layout="@layout/fragment_species" >
+        <action
+            android:id="@+id/action_speciesFragment_to_specieDetailFragment"
+            app:destination="@id/specieDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/specieDetailFragment"
+        android:name="com.example.starwarscatalog.catalogFragments.SpecieDetailFragment"
+        tools:layout="@layout/fragment_species_detail" >
+        <action
+            android:id="@+id/action_specieDetailFragment_to_personDetailFragment"
+            app:destination="@id/personDetailFragment" />
+        <action
+            android:id="@+id/action_specieDetailFragment_to_planetDetailFragment"
+            app:destination="@id/planetDetailFragment" />
+        <action
+            android:id="@+id/action_specieDetailFragment_to_filmDetailFragment"
+            app:destination="@id/filmDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/starshipFragment"
+        android:name="com.example.starwarscatalog.catalogFragments.StarshipFragment"
+        tools:layout="@layout/fragment_starship" >
+        <action
+            android:id="@+id/action_starshipFragment_to_starshipDetailFragment"
+            app:destination="@id/starshipDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/starshipDetailFragment"
+        android:name="com.example.starwarscatalog.catalogFragments.StarshipDetailFragment"
+        tools:layout="@layout/fragment_starship_detail" >
+        <action
+            android:id="@+id/action_starshipDetailFragment_to_personDetailFragment"
+            app:destination="@id/personDetailFragment" />
+        <action
+            android:id="@+id/action_starshipDetailFragment_to_filmDetailFragment"
+            app:destination="@id/filmDetailFragment" />
+    </fragment>
+</navigation>
